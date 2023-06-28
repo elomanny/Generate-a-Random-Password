@@ -71,8 +71,6 @@ function generatePassword() {
   let checked_box = getUsersCheckedBox();
   let password = "";
   
-  const {numbers, lowercase, uppercase, symbols} = all_char
-  
 
   if (checked_box.includes("numbers")) {
     password += all_char.numbers
