@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Generate A Random</title>
+
+  <!-- HTML -->
+
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>Generate a <br><span class="heading">Random Password</span></h1>
+
+    <div class="inputs-container">
+
+      <input type="number" id="number" placeholder="Password Length"> <br>
+
+      <input type="text" id="password-field" placeholder="Password" readonly>
+      <i id="copy" class="fa-regular fa-copy"></i>
+    </div>
+
+    <div class="info-box">
+      <p id="info"></p>
+    </div>
+
+    <div class="checkboxes-area">
+
+      <label for="numbers">
+        <input type="checkbox" id="numbers" checked>
+        <div class="checkbox-box"></div>
+        Numbers <span class="eg">(12345)</span>
+      </label> <br>
+
+      <label for="lowercase">
+        <input type="checkbox" id="lowercase" checked>
+        <div class="checkbox-box"></div>
+        Lowercase Alphabet <span class="eg">(abcde)</span>
+      </label> <br>
+
+
+
+      <label for="uppercase">
+        <input type="checkbox" id="uppercase">
+        <div class="checkbox-box"></div>
+        Uppercase Alphabet <span class="eg">(ABCDE)</span>
+      </label> <br>
+
+
+
+      <label for="symbols">
+        <input type="checkbox" id="symbols">
+        <div class="checkbox-box"></div>
+        Symbols <span class="eg">(#$&_@/)</span>
+      </label>
+
+
+    </div>
+
+    <div class="buttons-container">
+      <button id="generate-btn">Generate Password</button>
+      <button id="reset-btn">Reset</button>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
